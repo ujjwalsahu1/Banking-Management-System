@@ -107,6 +107,10 @@ class TestAccount(unittest.TestCase):
         
         limited_history = account.get_transaction_history(limit=1)
         self.assertEqual(len(limited_history), 1)
+        
+        # Test limit=0 edge case
+        empty_history = account.get_transaction_history(limit=0)
+        self.assertEqual(len(empty_history), 0)
 
 
 class TestTransaction(unittest.TestCase):

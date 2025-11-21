@@ -96,7 +96,9 @@ class Account:
         Returns:
             list: List of transactions
         """
-        if limit:
+        if limit is not None:
+            if limit == 0:
+                return []
             return self.transactions[-limit:]
         return self.transactions
     
