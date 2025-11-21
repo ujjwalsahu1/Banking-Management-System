@@ -38,6 +38,15 @@ Start the banking system with:
 python3 main.py
 ```
 
+### Quick Demo
+
+Try out the system features with the included demo script:
+```bash
+python3 demo.py
+```
+
+This will demonstrate all major features including customer creation, account management, transactions, and error handling.
+
 ### Main Menu Options
 
 1. **Customer Management**
@@ -87,14 +96,16 @@ python3 main.py
 
 ```
 Banking-Management-System/
-├── customer.py          # Customer class and management
-├── account.py           # Account class with deposit/withdrawal logic
-├── transaction.py       # Transaction tracking class
-├── banking_system.py    # Main banking system logic and data persistence
-├── main.py             # CLI application interface
-├── requirements.txt    # Python dependencies (none required)
-├── .gitignore         # Git ignore rules
-└── README.md          # This file
+├── customer.py             # Customer class and management
+├── account.py              # Account class with deposit/withdrawal logic
+├── transaction.py          # Transaction tracking class
+├── banking_system.py       # Main banking system logic and data persistence
+├── main.py                 # CLI application interface
+├── demo.py                 # Demo script showcasing features
+├── test_banking_system.py  # Comprehensive unit tests
+├── requirements.txt        # Python dependencies (none required)
+├── .gitignore              # Git ignore rules
+└── README.md               # This file
 ```
 
 ## Code Example
@@ -141,6 +152,30 @@ The system automatically saves all data to `banking_data.json` in the current di
 - System counters (customer IDs, account numbers, transaction IDs)
 
 The data is automatically loaded when the application starts, ensuring persistence across sessions.
+
+## Testing
+
+The project includes comprehensive unit tests covering all major functionality.
+
+### Running Tests
+
+Run all tests with:
+```bash
+python3 -m unittest test_banking_system.py -v
+```
+
+### Test Coverage
+
+The test suite includes 25 tests covering:
+- Customer creation, retrieval, and updates
+- Account creation and management
+- Deposit and withdrawal operations
+- Transaction history tracking
+- Data persistence across sessions
+- Error handling and edge cases
+- Input validation
+
+All tests pass successfully, ensuring the system works correctly.
 
 ## Error Handling
 
