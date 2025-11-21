@@ -119,7 +119,7 @@ class BankingSystem:
             return None
         
         account_number = self.generate_account_number()
-        account = Account(account_number, customer_id, account_type, initial_deposit)
+        account = Account(account_number, customer_id, account_type, 0.0)
         
         if initial_deposit > 0:
             transaction_id = self.generate_transaction_id()
