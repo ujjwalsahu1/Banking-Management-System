@@ -1,7 +1,6 @@
 """Main application for Banking Management System."""
 
 from bank import Bank
-from typing import Optional
 
 
 class BankingApp:

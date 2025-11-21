@@ -1,7 +1,5 @@
 """Customer module for banking management system."""
 
-from typing import Optional
-
 
 class Customer:
     """Represents a bank customer with personal details."""

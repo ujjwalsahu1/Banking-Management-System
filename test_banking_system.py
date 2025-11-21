@@ -1,7 +1,6 @@
 """Unit tests for the Banking Management System."""
 
 import unittest
-from datetime import datetime
 from account import Account
 from customer import Customer
 from bank import Bank

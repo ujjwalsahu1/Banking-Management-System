@@ -1,8 +1,6 @@
 """Demo script showcasing Banking Management System functionality."""
 
 from bank import Bank
-from account import Account
-from customer import Customer
 
 
 def demo():
